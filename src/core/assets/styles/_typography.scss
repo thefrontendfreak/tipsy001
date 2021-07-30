@@ -1,0 +1,44 @@
+// Label font import
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+// Title font import
+@font-face {
+  font-family: "Kato";
+  src: url("../fonts/Kato-regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$fontTitle: "Kato";
+$fontBody: "Montserrat", sans-serif;
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: $fontBody;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.title {
+  font-family: $fontTitle;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 7.6rem;
+  @media screen and (max-width: 575px) {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+}
+h2 {
+  font-size: 6.3rem;
+  line-height: 8rem;
+  @media screen and (max-width: 575px) {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
